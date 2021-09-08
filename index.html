@@ -1,9 +1,294 @@
-<html>
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Web Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale:1.0">
+        <link href="prac1.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+     <style>
+      body{
+    margin:0;
+    background-color: #222;
+    font-family:'Lobster';
+    font-weight:300px;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+header{
+    background-color: royalblue;
+}
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.logo{
+
+    margin-top:0;
+  
+    margin-left:0;
+    margin-bottom:0;
+    
+    display:block;
+    width:100px;
+    border:royalblue;
+    float:left;
+    position:relative;
+    padding:10px 0;
+    
  
-<body>
-  <h1>Justin</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    
+}
+
+}
+nav{
+   float:right; 
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+nav li{
+    display:inline-block;
+    margin-left:70px;
+    padding-top:23px;
+    padding-bottom:23px;
+    position:relative;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:14px;
+    font-family:'Lobster';
+
+}
+nav a:hover{
+    color:black;
+}
+nav a::before{
+    content:'';
+    display:block;
+    height:5px;
+    width:100%;
+    background-color:#444;
+    position:absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+
+
+}
+nav a:hover::before{
+
+    width:100%;
+
+}
+.pic{
+    display:inline-block;
+    text-align: justify;
+}
+section{
+    color:white;
+    font-size: 23px;
+    font-weight:700;
+    font-family:monospace;
+}
+
+}
+.logo{
+    flex-grow:1;
+    color:whitesmoke;
+    font-size:16px;
+    font-weight: bold;
+    font-family:serif;
+    float:left;
+    padding: left 30px;
+
+}
+.cyber{
+   
+    background-image: url("https://marketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg");
+    display:inline-block;
+    margin:0;
+    width:100%;
+    height:400px;
+   
+
+}
+.cyber article{
+    display:inline-block;
+    padding-bottom:-20px;
+    text-align:center;
+
+}
+.cyber h1{
+    padding-top:20px;
+    text-align:center;
+    letter-spacing:10px;
+
+    background-repeat: none;
+    display:inline-block;
+    margin-left:400px;
+    margin-top:0;
+    
+    
+}
+.firstletter{
+    font-size:200px;
+    color:aqua;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight:700;
+    display:inline-block;
+    padding-top:0px;
+}
+.footer{
+    background-color: royalblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+  
+
+    text-align: center;
+    line-height:100px;
  
+  
+}
+.footer li{
+    list-style: none;
+    display:inline-block;
+    margin-left:70px;
+    padding-top:0;
+    padding-bottom:0;
+    position:relative;
+    
+    
+}
+.footer a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:14px;
+    font-family:'Lobster';
+    
+}
+
+.footer a:hover{
+    color:black;
+}
+.search{
+    display: inline-block;
+    width: 100%;
+}
+.block {
+    height: 100px;
+    width: 100px;
+    display: block;
+  }
+  
+  #container{
+    background-color:white;
+       position: absolute;
+    width: 100%;
+  }
+  
+  #teal {
+    background-color: #A8D0DB;
+    padding: 0 50px;
+    margin: 100px;
+    text-align: center;
+  }
+  
+  #purple {
+    background-color: #A8D0DB;
+    padding: 50px;
+      margin: 50px 100px;
+      text-align: center;
+  }
+  #teal p{
+
+    padding-top:40px;
+    font-size:20px;
+  }
+  #purple p{
+
+    
+    padding-top:20px;
+    font-size:20px;
+  }
+
+#hover1:hover{
+    color:white;
+}
+#hover2:hover{
+    color:white;
+}
+     </style>
+    
+    </head>
+    <body>
+  <header>
+     
+      <div class="container"> 
+
+        <div class="Logo"><img src="https://i.pinimg.com/originals/1e/00/78/1e0078f8266738d005b5fc7d00f9a66e.png" alt="logo" class="logo"></div>
+          <nav>
+        
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <input type="text" placeholder="Search" class="Search">
+                </li>
+            
+
+            </ul>
+           </nav> 
+        </div>
+          
+
+        </header>
+        <main class="cyber">
+            <section>
+                <h1>Cyber Attacks</h1>
+                <article><span class="firstletter">C</span>yber Attacks are detrimental activities which lead to the destruction of networks and computer opersting's systems</article>
+            </section>
+            <br>
+
+            <div id="container">
+                <a id="hover1"><div id="teal" class="block">
+                    <p>Sign In</p>
+                </div></a>
+                <a id="hover2"><div id="purple" class="block"><p>Register</p></div></a>
+
+            </div>
+            
+           
+        </main>
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Connect with Us</a></li>
+                <li><a href="#">About Web Design</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Lastest News</a></li>
+                
+            </ul>
+        </footer>
+    
+    
+    </body>
 </html>
